@@ -207,7 +207,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 /* SERVICES */
 .svc-cols {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2.5rem;
 }
 .svc-col h3 {
@@ -281,7 +281,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 /* CONTACT */
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   max-width: 700px;
   margin: 0 auto;
@@ -315,7 +315,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .photo-strip { grid-template-columns: 1fr; }
   .photo-strip img { height: 220px; }
   .svc-cols { grid-template-columns: 1fr; gap: 2rem; }
-  .contact-grid { grid-template-columns: 1fr 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
   .section-dark, .section-surface { padding: 3.5rem 1.5rem; }
 }
 @media (max-width: 480px) {
@@ -331,7 +331,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   <div class="nav-links">
     <a href="#paslaugos">Paslaugos</a>
     <a href="#kontaktai">Kontaktai</a>
-    <a href="tel:+37064503111" class="nav-cta">Registruotis</a>
+    <a href="https://trea.tw/erfhEwe4jE9rQmq9Q" class="nav-cta" target="_blank" rel="noopener">Registruotis</a>
   </div>
 </nav>
 
@@ -340,7 +340,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
     <p class="hero-over">Marijampolės senamiestis</p>
     <h1 class="display">Senamiesčio<br>Masažas</h1>
     <p class="hero-sub">Profesionalus masažas jaukioje senamiesčio aplinkoje</p>
-    <a href="tel:+37064503111" class="btn">Registruotis vizitui</a>
+    <a href="https://trea.tw/erfhEwe4jE9rQmq9Q" class="btn" target="_blank" rel="noopener">Registruotis vizitui</a>
   </div>
   <div class="scroll-hint">
     <span>Žemyn</span>
@@ -372,56 +372,62 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
     <div class="section-rule"></div>
     <div class="svc-cols">
       <div class="svc-col">
-        <h3>Nugaros masažai</h3>
-        <div class="svc-item">
-          <div class="svc-item-top"><span class="name">Kaklo ir pečių masažas</span><span class="price">€25</span></div>
-          <div class="dur">30 min</div>
-        </div>
-        <div class="svc-item">
-          <div class="svc-item-top"><span class="name">Nugaros masažas</span><span class="price">€30</span></div>
-          <div class="dur">30 min</div>
-        </div>
-        <div class="svc-item">
-          <div class="svc-item-top"><span class="name">Nugaros, pečių ir kaklo</span><span class="price">€45</span></div>
-          <div class="dur">40 min</div>
-        </div>
-        <div class="svc-item">
-          <div class="svc-item-top"><span class="name">Nugaros, rankų ir plaštakų</span><span class="price">€45</span></div>
-          <div class="dur">40 min</div>
-        </div>
-      </div>
-      <div class="svc-col">
         <h3>Viso kūno masažai</h3>
         <div class="svc-item">
-          <div class="svc-item-top"><span class="name">Klasikinis viso kūno</span><span class="price">€55</span></div>
-          <div class="dur">60 min</div>
+          <div class="svc-item-top"><span class="name">Viso kūno masažas</span><span class="price">55–75€</span></div>
+          <div class="dur">60–90 min</div>
         </div>
         <div class="svc-item">
-          <div class="svc-item-top"><span class="name">Prailgintas viso kūno</span><span class="price">€75</span></div>
-          <div class="dur">90 min</div>
-        </div>
-        <div class="svc-item">
-          <div class="svc-item-top"><span class="name">Karališkasis aromaterapinis</span><span class="price">€85</span></div>
-          <div class="dur">60 min</div>
+          <div class="svc-item-top"><span class="name">Karališkas aromaterapinis atpalaiduojantis viso kūno masažas</span><span class="price">75–90€</span></div>
+          <div class="dur">60–90 min</div>
         </div>
       </div>
       <div class="svc-col">
-        <h3>Specializuoti masažai</h3>
+        <h3>Nugaros masažai</h3>
         <div class="svc-item">
-          <div class="svc-item-top"><span class="name">Rankų ir plaštakų</span><span class="price">€22</span></div>
+          <div class="svc-item-top"><span class="name">Nugaros masažas</span><span class="price">30€</span></div>
           <div class="dur">30 min</div>
         </div>
         <div class="svc-item">
-          <div class="svc-item-top"><span class="name">Kaklinės-kaukolinės srities</span><span class="price">€40</span></div>
-          <div class="dur">40 min</div>
-        </div>
-        <div class="svc-item">
-          <div class="svc-item-top"><span class="name">Antistresinis pečių ir pėdų</span><span class="price">€45</span></div>
-          <div class="dur">40 min</div>
-        </div>
-        <div class="svc-item">
-          <div class="svc-item-top"><span class="name">Prabangusis aromaterapinis</span><span class="price">€65</span></div>
+          <div class="svc-item-top"><span class="name">Nugaros, pečių ir sprando masažas</span><span class="price">45€</span></div>
           <div class="dur">45 min</div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-item-top"><span class="name">Antistresinis pečių lanko ir pėdų masažas</span><span class="price">45€</span></div>
+          <div class="dur">45 min</div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-item-top"><span class="name">Prabangus nugaros, pečių ir kaklo aromaterapinis masažas</span><span class="price">65€</span></div>
+          <div class="dur">45 min</div>
+        </div>
+      </div>
+      <div class="svc-col">
+        <h3>Kaklo masažai</h3>
+        <div class="svc-item">
+          <div class="svc-item-top"><span class="name">Cerviko-kranialinis kaklo masažas</span><span class="price">40€</span></div>
+          <div class="dur">40 min</div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-item-top"><span class="name">Kaklo ir pečių juostos masažas</span><span class="price">30€</span></div>
+          <div class="dur">30 min</div>
+        </div>
+      </div>
+      <div class="svc-col">
+        <h3>Kojų masažai</h3>
+        <div class="svc-item">
+          <div class="svc-item-top"><span class="name">Juosmens ir kojų masažas</span><span class="price">30€</span></div>
+          <div class="dur">30 min</div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-item-top"><span class="name">Pėdų ir blauzdų masažas</span><span class="price">30€</span></div>
+          <div class="dur">30 min</div>
+        </div>
+      </div>
+      <div class="svc-col">
+        <h3>Rankų masažai</h3>
+        <div class="svc-item">
+          <div class="svc-item-top"><span class="name">Rankų masažas</span><span class="price">30€</span></div>
+          <div class="dur">30 min</div>
         </div>
       </div>
     </div>
@@ -447,19 +453,15 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
       </div>
       <div class="contact-item">
         <h3>Telefonas</h3>
-        <p><a href="tel:+37064503111">+370 645 03 111</a></p>
+        <p><a href="tel:+37068781221">+370 687 81221</a></p>
       </div>
       <div class="contact-item">
         <h3>Darbo laikas</h3>
         <p>I–V: 09:00–18:00<br>VI–VII: Nedirbame</p>
       </div>
-      <div class="contact-item">
-        <h3>Transportas</h3>
-        <p>Autobusai 7, 8<br>J. Dailidės g. stotelė</p>
-      </div>
     </div>
     <div class="contact-cta">
-      <a href="tel:+37064503111" class="btn">Skambinti dabar</a>
+      <a href="https://trea.tw/erfhEwe4jE9rQmq9Q" class="btn" target="_blank" rel="noopener">Registruotis dabar</a>
     </div>
   </div>
 </section>
