@@ -678,6 +678,28 @@ html { scroll-padding-top: 90px; }
   .svc-col h3 { font-size: 1.45rem; }
   html { scroll-padding-top: 76px; }
 }
+
+/* GIFT VOUCHERS */
+.voucher-text { max-width: 560px; margin: 0 auto; text-align: center; color: var(--secondary); }
+.voucher-text p { margin-bottom: 1rem; }
+.voucher-text h3 {
+  font-size: 1.35rem;
+  color: var(--accent);
+  margin: 1.75rem 0 0.6rem;
+}
+.voucher-list { list-style: none; text-align: left; display: inline-block; max-width: 100%; }
+.voucher-list li { position: relative; padding-left: 1.5rem; margin-bottom: 0.6rem; }
+.voucher-list li::before {
+  content: '';
+  position: absolute;
+  left: 0.15rem; top: 0.62em;
+  width: 7px; height: 7px;
+  background: var(--green);
+  transform: rotate(45deg);
+}
+.voucher-cta { display: flex; flex-wrap: wrap; gap: 1.25rem; justify-content: center; margin-top: 2.25rem; }
+.btn.btn-alt { background: transparent; color: var(--accent); }
+.btn.btn-alt:hover, .btn.btn-alt:focus-visible { background: var(--accent); color: #F5EFE3; }
 </style>
 </head>
 <body>
@@ -686,6 +708,7 @@ html { scroll-padding-top: 90px; }
   <div class="nav-links nav-left">
     <a href="#apie">Apie mane</a>
     <a href="#paslaugos">Paslaugos</a>
+    <a href="#kuponai">Kuponai</a>
   </div>
   <a href="tel:+37068781221" class="nav-call">Skambinti</a>
   <a href="https://trea.tw/erfhEwe4jE9rQmq9Q" class="nav-cta" target="_blank" rel="noopener">Registruotis</a>
@@ -867,7 +890,29 @@ html { scroll-padding-top: 90px; }
         </div>
       </div>
     </div>
-    <p style="text-align:center; margin-top:3rem; color:var(--secondary); font-size:0.95rem;">Galima įsigyti dovanų kuponus</p>
+    <p style="text-align:center; margin-top:3rem; color:var(--secondary); font-size:0.95rem;">Galima įsigyti <a href="#kuponai">dovanų kuponus</a></p>
+  </div>
+</section>
+
+<section id="kuponai" class="section-dark">
+  <div class="section-inner panel">
+    <h2 class="display section-title">Dovanų kuponai</h2>
+    <div class="section-rule"></div>
+    <div class="voucher-text">
+      <p>Padovanokite artimam žmogui poilsį ir rūpestį. Dovanų kuponą galite įsigyti konkrečiam masažui arba pasirinktai sumai – gavėjas pats pasirinks, kada juo pasinaudoti.</p>
+      <h3 class="display">Susisiekite</h3>
+      <p>Dovanų kuponą galima užsisakyti paskambinus telefonu <a href="tel:+37068781221">+370 687 81221</a> arba parašius „Senamiesčio Masažo“ Facebook puslapyje. Kuponas gali būti elektroninis, siunčiamas gavėjo vardu, arba spausdintas – jį galima atsiimti kabinete arba gauti paštu.</p>
+      <h3 class="display">Svarbu žinoti</h3>
+      <ul class="voucher-list">
+        <li>Kuponas galioja 6 mėnesius nuo įsigijimo dienos.</li>
+        <li>Sumos kuponą galima panaudoti bet kuriai kabineto paslaugai.</li>
+        <li>Vizitui galima registruotis telefonu arba mygtuku „Registruotis“ šioje svetainėje ar Facebook puslapyje. Atvykus pateikiamas kuponas.</li>
+      </ul>
+    </div>
+    <div class="voucher-cta">
+      <a href="tel:+37068781221" class="btn">Skambinti</a>
+      <a href="https://www.facebook.com/senamiescio.masazas/" class="btn btn-alt" target="_blank" rel="noopener">Rašyti Facebook</a>
+    </div>
   </div>
 </section>
 
