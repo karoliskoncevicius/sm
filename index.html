@@ -700,6 +700,20 @@ html { scroll-padding-top: 90px; }
 .voucher-cta { display: flex; flex-wrap: wrap; gap: 1.25rem; justify-content: center; margin-top: 2.25rem; }
 .btn.btn-alt { background: transparent; color: var(--accent); }
 .btn.btn-alt:hover, .btn.btn-alt:focus-visible { background: var(--accent); color: #F5EFE3; }
+
+/* REVIEWS */
+.reviews { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; align-items: start; }
+.review-card {
+  background: #FBF8F1;
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--green);
+  padding: 1.75rem 1.75rem 1.5rem;
+}
+.review-card p { font-style: italic; line-height: 1.65; margin-bottom: 1rem; }
+.review-card footer { font-size: 0.85rem; color: var(--secondary); }
+.review-card footer strong { color: var(--accent); font-weight: 600; }
+.reviews-more { text-align: center; margin-top: 2.25rem; color: var(--secondary); font-size: 0.95rem; }
+@media (max-width: 768px) { .reviews { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -918,11 +932,41 @@ html { scroll-padding-top: 90px; }
 
 <section class="review-band">
   <div class="review-content">
-    <p class="review-quote display">„Masažas buvo gilus, tikslus ir tvirtas. Labai rekomenduoju!"</p>
-    <div class="review-stars">★★★★★</div>
-    <p class="review-meta">5.0 / 5 — Treatwell klientai</p>
+    <p class="review-quote display">„Masažas gilus, tikslus ir tvirtas. Labai patiko, rekomenduoju! Marijampolėje geresnio masažo neteko darytis.“</p>
+    <p class="review-meta">Goda · Treatwell</p>
   </div>
 </section>
+
+<section id="atsiliepimai" class="section-dark">
+  <div class="section-inner section-wide">
+    <h2 class="display section-title">Klientų atsiliepimai</h2>
+    <div class="section-rule"></div>
+    <div class="reviews">
+      <blockquote class="review-card">
+        <p>„… Kabineto interjeras, malonus aliejaus kvapas, tobulai komfortiška temperatūra patalpoje, patogus gultas, stiklinis buteliukas vandens… ir, žinoma, Jūsų profesionalumas bei šiluma, kurią spinduliuojate. Neįmanoma nejausti, kad dirbate su begaline meile savo darbui. Ačiū už puikų masažą ir už šiltą jausmą, su kuriuo išėjau iš Jūsų kabineto.“</p>
+        <footer><strong>Anastasija</strong> · Facebook</footer>
+      </blockquote>
+      <blockquote class="review-card">
+        <p>„Labai patiko apsilankymas, jauki aplinka, masažo atlikimas puikus, dėmesinga masažuotoja. Labai ačiū už masažą!“</p>
+        <footer><strong>Ineta</strong> · Facebook</footer>
+      </blockquote>
+      <blockquote class="review-card">
+        <p>„Išbandyta masažų tikrai ne vienas ir ne du, bet su jumis nėra ką lyginti! Super aplinka, norėjosi ten ir pasilikti… Ačiū už šiltą bendravimą, gavau trigubai daugiau, nei tikėjausi… Rekomenduoju visu 100 %!“</p>
+        <footer><strong>Diana</strong> · Facebook</footer>
+      </blockquote>
+      <blockquote class="review-card">
+        <p>„Nuoširdžiai rekomenduoju. Masažuotoja išmano savo darbą. Masažas atpalaidavo įsitempusius raumenis – tikrai pajutau palengvėjimą. Atmosfera labai maloni ir draugiška. Tikrai dar ne kartą pasinaudosiu šios be galo malonios ir šiltos moters paslaugomis. Rekomenduoju 100 %.“</p>
+        <footer><strong>Irena</strong> · Google · išversta iš lenkų k.</footer>
+      </blockquote>
+    </div>
+    <p class="reviews-more">Visi atsiliepimai:
+      <a href="https://www.treatwell.lt/salonas/senamiescio-masazas/" target="_blank" rel="noopener">Treatwell</a> ·
+      <a href="https://www.facebook.com/senamiescio.masazas/reviews/?id=100039758752323&amp;sk=reviews" target="_blank" rel="noopener">Facebook</a> ·
+      <a href="https://maps.app.goo.gl/uuysnqkCJZvE3vhcA" target="_blank" rel="noopener">Google</a>
+    </p>
+  </div>
+</section>
+
 
 <section id="kontaktai" class="section-dark">
   <div class="section-inner">
